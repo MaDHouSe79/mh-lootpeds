@@ -37,7 +37,7 @@ RegisterNetEvent('qb-lootpeds:server:getloot', function(entity)
     
     -- Cash Robbery Chance
     if Config.UseCash and math.random(1,100) < Config.CashChance then
-        Player.Functions.AddMoney('cash', Config.CashReward)
+        Player.Functions.AddMoney(Config.CashType, Config.CashReward)
     end
         
     -- Basic Item
