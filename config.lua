@@ -15,6 +15,12 @@ Config.EnableOnStart = true
 Config.UseNormalWeaponLoot = true
 Config.UseHeavyWeaponLoot = true
 
+
+Config.UseCashRobbery = true
+Config.CashRobberyChance = 50
+Config.CashReward = math.random(25, 100)
+
+
 -- Admin commands
 Config.Commands = {
     toggle = 'pedloot', -- (/pedloot On/ /pedloot Off)
