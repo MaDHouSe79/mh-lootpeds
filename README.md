@@ -2,7 +2,7 @@
 With this script you can loot dead corps.
 
 
-## 💪 Dependencies
+## Dependencies
 - ✅ [qb-core](https://github.com/qbcore-framework/qb-core)
 - ✅ [qb-target](https://github.com/qbcore-framework/qb-target)
 
@@ -18,9 +18,9 @@ With this script you can loot dead corps.
 - /lootPeds Off
 
 
-## 🐞 Any bugs or issues, let my know.
+## Any bugs or issues, let my know.
 
 
-## 🙈 Youtube & Discord
+## Youtube & Discord
 - [Youtube](https://www.youtube.com/c/MaDHouSe79)
 - [Discord](https://discord.gg/cEMSeE9dgS)
