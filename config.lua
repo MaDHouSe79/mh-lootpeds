@@ -16,8 +16,9 @@ Config.UseNormalWeaponLoot = true
 Config.UseHeavyWeaponLoot = true
 
 
-Config.UseCashRobbery = true
-Config.CashRobberyChance = 50
+-- if you want Cash Chance when looting a dead corps
+Config.UseCash = true
+Config.CashChance = 50
 Config.CashReward = math.random(25, 100)
 
 
