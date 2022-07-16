@@ -33,15 +33,15 @@ RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
 end)
 
 -- ENABLE LOOT SYSTEM
-local SystemIsEnable = false
+local IsEnable = Config.EnableOnStart
 RegisterNetEvent("qb-lootpeds:client:enable", function()
-    SystemIsEnable = true
+    IsEnable = true
     QBCore.Functions.Notify(Lang:t('system.enable'), "success")
 end)
 
 -- DISABLE LOOT SYSTEM
 RegisterNetEvent("qb-lootpeds:client:disable", function()
-    SystemIsEnable = false
+    IsEnable = false
     QBCore.Functions.Notify(Lang:t('system.disable'), "success")
     DeleteAllPeds()
 end)
@@ -76,13 +76,13 @@ if Config.UseTarget then
                 label = Lang:t('target.label'),
                 targeticon = 'fas fa-skull-crossbones',
                 action = function(entity)
-                    if not SystemIsEnable then return false end 
+                    if not IsEnable then return false end 
                     if IsPedAPlayer(entity) then return false end
                     if IsPadAlreadyLooted(entity) then return false end
                     TriggerEvent('qb-lootpeds:client:takeloot', entity)
                 end,
                 canInteract = function(entity, distance, data)
-                    if not SystemIsEnable then return false end 
+                    if not IsEnable then return false end 
                     if IsPedAPlayer(entity) then return false end
                     if not IsPedAPlayer(entity) and not IsEntityDead(entity) then return false end
                     if IsPadAlreadyLooted(entity) then return false end
