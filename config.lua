@@ -8,18 +8,19 @@ Config = {}
 -- Use qb-target interactions (don't change this, go to your server.cfg and add setr UseTarget true)
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
 
-Config.EnableOnStart = true
+-- if you want to loot dead peds by default, set this true
+Config.EnableOnStart = true 
 
+-- if you want to use weapons or not
 Config.UseNormalWeaponLoot = true
 Config.UseHeavyWeaponLoot = true
-
 
 -- Admin commands
 Config.Commands = {
     toggle = 'pedloot', -- (/pedloot On/ /pedloot Off)
 }
 
--- around 106 peds that react to events with Target Eye
+-- Around 106 peds that react to events with Target Eye
 Config.PedModels = {
     "a_f_m_beach_01",
     "a_f_m_bevhills_01",
