@@ -16,7 +16,7 @@ Config.UseHeavyWeaponLoot = true
 
 -- Admin commands
 Config.Commands = {
-    toggle = 'pedloot',
+    toggle = 'pedloot', -- (/pedloot On/ /pedloot Off)
 }
 
 -- around 106 peds that react to events with Target Eye
