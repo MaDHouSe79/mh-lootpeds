@@ -18,8 +18,8 @@ With this script you can loot dead corps.
 
 
 ## Admin Command
-- /lootpeds On
-- /lootPeds Off
+- `/pedloot On`
+- `/pedloot Off`
 
 
 ## Any bugs or issues, let my know.
