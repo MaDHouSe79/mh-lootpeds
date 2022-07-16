@@ -35,6 +35,11 @@ RegisterNetEvent('qb-lootpeds:server:getloot', function(entity)
     if not Player then return end
     TriggerClientEvent('qb-lootpeds:client:deleteped', -1, entity)
     
+    -- Cash Robbery Chance
+    if Config.UseCashRobbery and math.random(1,100) < Config.CashRobberyChance then
+        Player.Functions.AddMoney('cash', Config.CashReward)
+    end
+        
     -- Basic Item
     local item = Config.Items.Basic[math.random(1, #Config.Items.Basic)]
     if item.name then
