@@ -20,7 +20,7 @@ Config.UseHeavyWeaponLoot = true
 Config.UseCash = true
 Config.CashChance = 50
 Config.CashReward = math.random(25, 100)
-
+Config.CashType = 'cash' -- use cash or bank
 
 -- Admin commands
 Config.Commands = {
