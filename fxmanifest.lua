@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 author 'MaDHouSe'
-description 'MaDHouSe Loot System, made for QBCore'
+description 'QB-loot is a dead corp loot system'
 version '1.0'
 
 
@@ -10,7 +10,7 @@ lua54 'yes'
 
 shared_scripts {
 	'@qb-core/shared/locale.lua',
-	'locales/nl.lua', -- change en to your language
+	'locales/en.lua', -- change en to your language
 	'config.lua',
 }
 
@@ -24,6 +24,6 @@ server_scripts {
 }
 
 dependencies {
-    'qb-core',
-	'qb-target',
+        'qb-core',
+        'qb-target',
 }
