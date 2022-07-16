@@ -9,8 +9,8 @@ With this script you can loot dead corps.
 
 ## Install
 - put the `qb-lootpeds` in `resources/[qb]/qb-lootpeds`
-- refresh
-- ensure qb-lootpeds
+- open F8 type `refresh`
+- ater refresh type `ensure qb-lootpeds` or you can restart the server.
 
 
 ## Admin Command
