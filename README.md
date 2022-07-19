@@ -31,7 +31,7 @@ TriggerEvent('qb-lootpeds:server:enable')
 - Disable Loot System For All Players
 ```lua
 TriggerEvent('qb-lootpeds:server:disable')
-``
+```
 
 ## Any bugs or issues, let my know.
 
