@@ -15,7 +15,7 @@ With this script you can loot dead corps.
 - open F8 type `refresh`
 - ater `refresh` type `ensure qb-lootpeds` or you can restart the server.
 - don't forget the admin command to `enable` or `disable` the loot system.
-
+- check if you have `setr UseTarget true` in your server.cfg of this script wil not work.
 
 ## Admin Command
 - `/pedloot On`
