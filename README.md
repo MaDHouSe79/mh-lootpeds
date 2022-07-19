@@ -4,6 +4,8 @@ With this script you can loot dead corps.
 ## NOTE 
 - This loot system will not work if you dont have qb-target.
 - make sure `qb-target` is installed `correctly` on your server.
+- check if you have `setr UseTarget true` in your server.cfg or this script will not work.
+
 
 ## Dependencies
 - ✅ [qb-core](https://github.com/qbcore-framework/qb-core)
