@@ -22,6 +22,17 @@ With this script you can loot dead corps.
 - `/pedloot Off`
 
 
+## Server side triggers Enable or Disable Lootsystem triggers
+- Enable Loot System For All Players
+```lua
+TriggerEvent('qb-lootpeds:server:enable')
+```
+
+- Disable Loot System For All Players
+```lua
+TriggerEvent('qb-lootpeds:server:disable')
+``
+
 ## Any bugs or issues, let my know.
 
 
