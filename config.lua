@@ -17,10 +17,10 @@ Config.UseHeavyWeaponLoot = true
 
 
 -- if you want Cash Chance when looting a dead corps
-Config.UseCash = true
-Config.CashChance = 50
-Config.CashReward = math.random(25, 100)
-Config.CashType = 'cash' -- use cash or bank
+Config.UseCash = true 
+Config.CashChance = 50                   -- set lowe reduse the change of getting money
+Config.CashReward = math.random(25, 100) -- amount of money you can get
+Config.CashType = 'cash'                 -- use cash or bank
 
 -- Admin commands
 Config.Commands = {
