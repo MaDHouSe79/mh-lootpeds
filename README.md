@@ -1,5 +1,6 @@
 ## QB-LootPeds 
 With this script you can loot dead corps.
+this script also works with zombie scripts, if you add the ped model name to the list inside config.lua.
 
 ## NOTE 
 - This loot system will not work if you dont have qb-target.
