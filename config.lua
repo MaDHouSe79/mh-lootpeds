@@ -6,7 +6,7 @@
 Config = {}                          
 
 -- Use qb-target interactions (don't change this, go to your server.cfg and add setr UseTarget true)
-Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
+Config.UseTarget = true
 
 -- if you want to loot dead peds by default, set this true
 Config.EnableOnStart = true 
