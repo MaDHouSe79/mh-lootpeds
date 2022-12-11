@@ -5,7 +5,7 @@
 -- Placeholder (Don't change this)
 Config = {}                          
 
--- Use qb-target interactions (don't change this, go to your server.cfg and add setr UseTarget true)
+-- Use qb-target interactions (don't change this)
 Config.UseTarget = true
 
 -- if you want to loot dead peds by default, set this true
