@@ -27,7 +27,7 @@
   <img alig src="https://raw.githubusercontent.com/kamranahmedse/driver.js/master/demo/images/split.png" />
 </p>
 
-## QB-LootPeds 
+## MH-LootPeds 
 With this script you can loot dead corps.
 this script also works with zombie scripts, if you add the ped model name to the list inside config.lua.
 
@@ -43,9 +43,9 @@ this script also works with zombie scripts, if you add the ped model name to the
 
 
 ## Install
-- put the `qb-lootpeds` in `resources/[qb]/qb-lootpeds`
+- put the `mh-lootpeds` in `resources/[qb]/mh-lootpeds`
 - open F8 type `refresh`
-- ater `refresh` type `ensure qb-lootpeds` or you can restart the server.
+- ater `refresh` type `ensure mh-lootpeds` or you can restart the server.
 - don't forget the admin command to `enable` or `disable` the loot system.
 
 ## Admin Command
