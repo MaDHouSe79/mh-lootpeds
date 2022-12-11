@@ -46,7 +46,7 @@ this script also works with zombie scripts, if you add the ped model name to the
 - create a folder in `resources` [mh]
 - put the `mh-lootpeds` in `resources/[mh]/`
 - open F8 type `refresh`
-- ater `refresh` type `ensure [mh]` or you can restart the server.
+- ater `refresh` type `ensure mh-lootpeds` or you can restart the server.
 - don't forget the admin command to `enable` or `disable` the loot system.
 
 ## Admin Command
