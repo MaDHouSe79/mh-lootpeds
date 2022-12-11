@@ -47,7 +47,6 @@ this script also works with zombie scripts, if you add the ped model name to the
 - open F8 type `refresh`
 - ater `refresh` type `ensure qb-lootpeds` or you can restart the server.
 - don't forget the admin command to `enable` or `disable` the loot system.
-- check if you have `setr UseTarget true` in your server.cfg or this script will not work.
 
 ## Admin Command
 - `/pedloot On`
