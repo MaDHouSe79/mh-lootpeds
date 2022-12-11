@@ -43,6 +43,7 @@ this script also works with zombie scripts, if you add the ped model name to the
 
 
 ## Install
+- create a folder in `resources` [mh]
 - put the `mh-lootpeds` in `resources/[mh]/`
 - open F8 type `refresh`
 - ater `refresh` type `ensure [mh]` or you can restart the server.
