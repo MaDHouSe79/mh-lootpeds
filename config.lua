@@ -1,5 +1,5 @@
 --[[ ===================================================== ]]--
---[[          QBCore Loot Peds System by MaDHouSe          ]]--
+--[[            MH Loot Peds System by MaDHouSe            ]]--
 --[[ ===================================================== ]]--
 
 -- Placeholder (Don't change this)
