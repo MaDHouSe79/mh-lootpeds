@@ -65,9 +65,5 @@ TriggerEvent('qb-lootpeds:server:enable')
 TriggerEvent('qb-lootpeds:server:disable')
 ```
 
-## Any bugs or issues, let my know.
-
-
-## Youtube & Discord
-- [Youtube](https://www.youtube.com/@MaDHouSe79)
-- [Discord](https://discord.gg/cEMSeE9dgS)
+# 🙈 Youtube
+- [Youtube](https://www.youtube.com/c/MaDHouSe79)
