@@ -54,17 +54,12 @@ exports['qb-target']:AddTargetModel(Config.PedModels, {
         action = function(entity)
             if IsPedAPlayer(entity) then return false end
             if IsPadAlreadyLooted(entity) then return false end
-            if isBlacklisted then return false end
             TriggerEvent('mh-lootpeds:client:takeloot', entity)
         end,
         canInteract = function(entity, distance, data)
             if IsPedAPlayer(entity) then return false end
             if not IsPedAPlayer(entity) and not IsEntityDead(entity) then return false end
             if IsPadAlreadyLooted(entity) then return false end
-            if isBlacklisted then
-                isPlayerBlacklisted()
-                return false
-            end
             return true
         end
     }},
