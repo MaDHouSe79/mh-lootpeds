@@ -8,6 +8,9 @@ Config = {}
 -- Use qb-target interactions (don't change this)
 Config.UseTarget = true
 
+-- Delete peds when looted,if this is false the ped stays on the ground.
+Config.DeletePedsWhenLooted = true
+
 -- if you want to loot dead peds by default, set this true
 Config.EnableOnStart = true 
 
