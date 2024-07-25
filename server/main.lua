@@ -55,7 +55,7 @@ RegisterNetEvent('mh-lootpeds:server:getloot', function(entity)
         local item = Config.Items.Basic[math.random(1, #Config.Items.Basic)]
         if item.name then
             Player.Functions.AddItem(item.name, 1, false)
-            TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[item.name], 'add')
+            TriggerClientEvent('qb-inventory:client:ItemBox', src, QBCore.Shared.Items[item.name], 'add')
         end
 
         -- Ammo Item
@@ -63,7 +63,7 @@ RegisterNetEvent('mh-lootpeds:server:getloot', function(entity)
             local ammo = Config.Items.Ammo[math.random(1, #Config.Items.Ammo)]
             if ammo.name == "pistol_ammo" or ammo.name == "snp_ammo" or ammo.name == "smg_ammo" or ammo.name == "rifle_ammo" or ammo.name == "shotgun_ammo" then
                 Player.Functions.AddItem(ammo.name, 1, false)
-                TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[ammo.name], 'add')
+                TriggerClientEvent('qb-inventory:client:ItemBox', src, QBCore.Shared.Items[ammo.name], 'add')
             end
         end
 
@@ -73,7 +73,7 @@ RegisterNetEvent('mh-lootpeds:server:getloot', function(entity)
             if math.random(1, 100) <= 15 then -- chance to get this item
                 if normalWeapon.name then
                     Player.Functions.AddItem(normalWeapon.name, 1, false, nil)
-                    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[normalWeapon.name], 'add')
+                    TriggerClientEvent('qb-inventory:client:ItemBox', src, QBCore.Shared.Items[normalWeapon.name], 'add')
                 end
             end
         end
@@ -84,7 +84,7 @@ RegisterNetEvent('mh-lootpeds:server:getloot', function(entity)
             if math.random(1, 100) <= 2 then -- chance to get this item
                 if heavyWeapon.name then
                     Player.Functions.AddItem(heavyWeapon.name, 1, false, nil)
-                    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[heavyWeapon.name], 'add')
+                    TriggerClientEvent('qb-inventory:client:ItemBox', src, QBCore.Shared.Items[heavyWeapon.name], 'add')
                 end
             end
         end
@@ -93,7 +93,7 @@ RegisterNetEvent('mh-lootpeds:server:getloot', function(entity)
         local ammo = Config.Items.Ammo[math.random(1, #Config.Items.Ammo)]
         if ammo.name == "pistol_ammo" or ammo.name == "snp_ammo" or ammo.name == "smg_ammo" or ammo.name == "rifle_ammo" or ammo.name == "shotgun_ammo" then
             Player.Functions.AddItem(ammo.name, 1, false)
-            TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[ammo.name], 'add', 1)
+            TriggerClientEvent('qb-inventory:client:ItemBox', src, QBCore.Shared.Items[ammo.name], 'add', 1)
         end
 
         -- Normal Weapon Item
@@ -101,7 +101,7 @@ RegisterNetEvent('mh-lootpeds:server:getloot', function(entity)
         if math.random(1, 100) <= 15 then -- chance to get this item
             if normalWeapon.name then
                 Player.Functions.AddItem(normalWeapon.name, 1, false, nil)
-                TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[normalWeapon.name], 'add', 1)
+                TriggerClientEvent('qb-inventory:client:ItemBox', src, QBCore.Shared.Items[normalWeapon.name], 'add', 1)
             end
         end
 
@@ -110,7 +110,7 @@ RegisterNetEvent('mh-lootpeds:server:getloot', function(entity)
         if math.random(1, 100) <= 2 then -- chance to get this item
             if heavyWeapon.name then
                 Player.Functions.AddItem(heavyWeapon.name, 1, false, nil)
-                TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[heavyWeapon.name], 'add', 1)
+                TriggerClientEvent('qb-inventory:client:ItemBox', src, QBCore.Shared.Items[heavyWeapon.name], 'add', 1)
             end
         end
 
