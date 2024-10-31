@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'MaDHouSe'
 description 'QB-loot is a dead corp loot system'
-version '1.0'
+version '1.0.0'
 
 
 lua54 'yes'
