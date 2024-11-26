@@ -4,15 +4,12 @@
 
 local QBCore = exports['qb-core']:GetCoreObject()
 local SystemIsEnable = Config.EnableOnStart
-
 local isAEventEnable = false
 
 --PLAYER ON JOIN 
 RegisterNetEvent('mh-lootpeds:server:onjoin', function()
     local src = source
-    if SystemIsEnable then 
-        TriggerClientEvent('mh-lootpeds:client:enable', src) 
-    end
+    if SystemIsEnable then TriggerClientEvent('mh-lootpeds:client:enable', src)  end
 end)
 
 -- ENABLE LOOT SYSTEM
@@ -135,7 +132,6 @@ AddEventHandler('onResourceStop', function(resource)
         TriggerClientEvent('mh-lootpeds:client:disable', -1)
     end
 end)
-
 
 -- START LOOTING COMMAND 
 QBCore.Commands.Add(Config.Commands.toggle, Lang:t('command.start_stop', {state = Lang:t('command.on_or_off')}), {}, false, function(source, args)

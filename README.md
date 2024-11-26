@@ -5,26 +5,22 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/MaDHouSe79/mh-lootpeds/issues">
-    <img src="https://img.shields.io/github/issues/MaDHouSe79/mh-lootpeds"/> 
-  </a>
-  <a href="https://github.com/MaDHouSe79/mh-lootpeds/network/members">
-    <img src="https://img.shields.io/github/forks/MaDHouSe79/mh-lootpeds"/> 
-  </a>  
-  <a href="https://github.com/MaDHouSe79/mh-lootpeds/stargazers">
-    <img src="https://img.shields.io/github/stars/MaDHouSe79/mh-lootpeds?color=white"/> 
-  </a>
-  <a href="https://github.com/MaDHouSe79/mh-lootpeds/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/MaDHouSe79/mh-lootpeds?color=black"/> 
-  </a>      
+    <a href="https://github.com/MaDHouSe79/mh-lootpeds/issues">
+        <img src="https://img.shields.io/github/issues/MaDHouSe79/mh-lootpeds"/> 
+    </a>
+    <a href="https://github.com/MaDHouSe79/mh-lootpeds/network/members">
+        <img src="https://img.shields.io/github/forks/MaDHouSe79/mh-lootpeds"/> 
+    </a>  
+    <a href="https://github.com/MaDHouSe79/mh-lootpeds/stargazers">
+        <img src="https://img.shields.io/github/stars/MaDHouSe79/mh-lootpeds?color=white"/> 
+    </a>
+    <a href="https://github.com/MaDHouSe79/mh-lootpeds/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/MaDHouSe79/mh-lootpeds?color=black"/> 
+    </a>      
 </p>
 
 <p align="center">
-  <img alig src="https://github-profile-trophy.vercel.app/?username=MaDHouSe79&margin-w=15&column=6" />
-</p>
-
-<p align="center">
-  <img alig src="https://raw.githubusercontent.com/kamranahmedse/driver.js/master/demo/images/split.png" />
+    <img alig src="https://github-profile-trophy.vercel.app/?username=MaDHouSe79&margin-w=15&column=6" />
 </p>
 
 ## MH-LootPeds 
@@ -36,11 +32,9 @@ this script also works with zombie scripts, if you add the ped model name to the
 - make sure `qb-target` is installed `correctly` on your server.
 - check if you have `setr UseTarget true` in your server.cfg or this script will not work.
 
-
 ## Dependencies
 - ✅ [qb-core](https://github.com/qbcore-framework/qb-core)
 - ✅ [qb-target](https://github.com/qbcore-framework/qb-target)
-
 
 ## Install
 - create a folder in `resources` [mh]
@@ -52,7 +46,6 @@ this script also works with zombie scripts, if you add the ped model name to the
 ## Admin Command
 - `/pedloot On`
 - `/pedloot Off`
-
 
 ## Server side triggers Enable or Disable Lootsystem
 - Enable Loot System For All Players

@@ -20,9 +20,51 @@ local function PedHasLooted(entity)
     lootedPeds[#lootedPeds + 1] = {ped = entity}
 end
 
+local function TakeLoot(entity)
+    TriggerServerEvent('mh-lootpeds:server:getloot', PedToNet(entity))
+    PedHasLooted(entity)
+end
+
+local function LoadTarget()
+    if Config.Target == "qb-target" then
+        exports['qb-target']:AddTargetModel(Config.PedModels, {
+            options = {{
+                type = "client",
+                icon = 'fas fa-skull-crossbones',
+                label = Lang:t('target.label'),
+                targeticon = 'fas fa-skull-crossbones',
+                action = function(entity) TakeLoot(entity) end,
+                canInteract = function(entity, distance, data)
+                    if IsPedAPlayer(entity) then return false end
+                    if not IsEntityDead(entity) then return false end
+                    if IsPadAlreadyLooted(entity) then return false end
+                    return true
+                end
+            }},
+            distance = 2.5
+        })
+    elseif Config.Target == "ox_target" then
+        exports.ox_target:addModel(Config.PedModels, {
+            {
+                icon = 'fas fa-skull-crossbones',
+                label = Lang:t('target.label'),
+                onSelect = function(data) TakeLoot(data.entity) end,
+                canInteract = function(entity, distance, coords, name)
+                    if IsPedAPlayer(entity) then return false end
+                    if not IsEntityDead(entity) then return false end
+                    if IsPadAlreadyLooted(entity) then return false end
+                    return true
+                end,
+                distance = 2.5
+            }
+        })
+    end
+end
+
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
-    PlayerData = QBCore.Functions.GetPlayerData()
     TriggerServerEvent('mh-lootpeds:server:onjoin')
+    PlayerData = QBCore.Functions.GetPlayerData()
+    LoadTarget()
 end)
 
 -- Delete Dead Ped
@@ -36,32 +78,3 @@ RegisterNetEvent("mh-lootpeds:client:deleteped", function(entity)
         end
     end
 end)
-
--- TAKE LOOT
-RegisterNetEvent("mh-lootpeds:client:takeloot", function(entity)
-    TriggerServerEvent('mh-lootpeds:server:getloot', PedToNet(entity))
-    PedHasLooted(entity)
-end)
-
--- TARGET SYSTEM
-exports['qb-target']:AddTargetModel(Config.PedModels, {
-    options = {{
-        type = "client",
-        event = "mh-lootpeds:client:takeloot",
-        icon = 'fas fa-skull-crossbones',
-        label = Lang:t('target.label'),
-        targeticon = 'fas fa-skull-crossbones',
-        action = function(entity)
-            if IsPedAPlayer(entity) then return false end
-            if IsPadAlreadyLooted(entity) then return false end
-            TriggerEvent('mh-lootpeds:client:takeloot', entity)
-        end,
-        canInteract = function(entity, distance, data)
-            if IsPedAPlayer(entity) then return false end
-            if not IsPedAPlayer(entity) and not IsEntityDead(entity) then return false end
-            if IsPadAlreadyLooted(entity) then return false end
-            return true
-        end
-    }},
-    distance = 2.5
-})
