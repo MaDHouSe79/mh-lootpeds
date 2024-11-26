@@ -2,9 +2,8 @@ fx_version 'cerulean'
 game 'gta5'
 
 author 'MaDHouSe'
-description 'QB-loot is a dead corp loot system'
+description 'MH-lootpeds - loot dead corp system'
 version '1.0.0'
-
 
 lua54 'yes'
 
@@ -25,6 +24,6 @@ server_scripts {
 }
 
 dependencies {
-        'qb-core',
-        'qb-target',
+    'qb-core',
+	'mh-core'
 }
