@@ -7,7 +7,7 @@ Config = {}
 
 -- Use qb-target interactions (don't change this)
 Config.UseTarget = true
-Config.Target = "qb-target" -- qb-target or ox_target
+Config.Target = "ox_target" -- qb-target or ox_target
 
 -- Delete peds when looted,if this is false the ped stays on the ground.
 Config.DeletePedsWhenLooted = true

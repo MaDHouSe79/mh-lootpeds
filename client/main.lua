@@ -61,6 +61,20 @@ local function LoadTarget()
     end
 end
 
+AddEventHandler('onResourceStop', function(resource)
+    if resource == GetCurrentResourceName() then 
+        PlayerData = {}
+    end
+end)
+
+AddEventHandler('onResourceStart', function(resource)
+    if resource == GetCurrentResourceName() then 
+        TriggerServerEvent('mh-lootpeds:server:onjoin')
+        PlayerData = QBCore.Functions.GetPlayerData()
+        LoadTarget()
+    end
+end)
+
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
     TriggerServerEvent('mh-lootpeds:server:onjoin')
     PlayerData = QBCore.Functions.GetPlayerData()
