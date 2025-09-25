@@ -53,12 +53,12 @@ this script also works with zombie scripts, if you add the ped model name to the
 ## Server side triggers Enable or Disable Lootsystem
 - Enable Loot System For All Players
 ```lua
-TriggerEvent('qb-lootpeds:server:enable')
+TriggerEvent('mh-lootpeds:server:enable')
 ```
 
 - Disable Loot System For All Players
 ```lua
-TriggerEvent('qb-lootpeds:server:disable')
+TriggerEvent('mh-lootpeds:server:disable')
 ```
 
 # LICENSE
